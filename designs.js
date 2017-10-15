@@ -11,7 +11,7 @@ const makeGrid = evt => {
   if(!(width && height)) return alert('He who paints in zero dimensions creates no masterpieces');
   
   // Clear old cells. GC will remove event listeners.
-  while(canvas.childNodes.length) canvas.lastChild.remove()
+  while(canvas.childNodes.length) canvas.lastChild.remove();
   
   // Create new cells
   while(height--) canvas.appendChild(document.createElement('tr'));
